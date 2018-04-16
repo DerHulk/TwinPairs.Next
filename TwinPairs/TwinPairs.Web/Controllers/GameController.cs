@@ -34,11 +34,11 @@ namespace TwinPairs.Web.Controllers
         {            
             var guid = GetGuid();
             var player = this.Client.GetGrain<IPlayerGrain>(guid);
-            var gamesTask = player.GetGameSummaries();
-            var availableTask = player.GetAvailableGames();
-            await Task.WhenAll(gamesTask, availableTask);
+            var detailTask = player.GetGameSummaries();
+            var availableGamesTask= player.GetAvailableGames();
+            await Task.WhenAll(detailTask, availableGamesTask);
 
-            return Json(new object[] { gamesTask.Result, availableTask.Result });
+            return Json(new { games = availableGamesTask.Result, details = detailTask.Result });
         }
 
         public async Task<ActionResult> CreateGame()

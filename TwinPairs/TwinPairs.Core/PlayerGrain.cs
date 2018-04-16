@@ -28,6 +28,9 @@ namespace TwinPairs.Core
             this.loses = 0;
             this.gamesStarted = 0;
 
+            if (string.IsNullOrEmpty(username))
+                this.username = this.GrainReference.GetPrimaryKey().ToString();
+
             return base.OnActivateAsync();
         }
 
