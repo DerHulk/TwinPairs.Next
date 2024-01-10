@@ -1,0 +1,14 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/TwinPairs-Web-Api/twinpairs_web_api/",                
+    ],    
+     "python.defaultInterpreterPath": "${workspaceFolder}/TwinPairs-Web-Api/.venv/",    
+    "python.testing.pytestArgs": [        
+        "--rootdir=${workspaceFolder}/TwinPairs-Web-Api",        
+        "--import-mode=importlib",        
+    ],
+    "python.analysis.enablePytestSupport": true,    
+    "python.testing.pytestPath": "${workspaceFolder}/TwinPairs-Web-Api/.venv/",                
+    "python.testing.unittestEnabled": false,    
+    "python.testing.pytestEnabled": true,
+}

@@ -1,0 +1,35 @@
+Todo:
+- Fast-Api
+    - Router
+    - IOC
+    - IOC Scopes
+    - Service
+    - ORMapper
+    - Futures
+    - Threading
+    - UUID
+    - Listen, Maps...(typisiert?)
+- Django
+    - Datenbank (ORMapper)
+
+
+Done:
+- Dictionary
+- Poetry installiert
+- Pytest installiert und test geschrieben
+- Classes geschrieben
+- Abstract Classes geschrieben (Interfaces)
+- ISort (python -m isort .)
+- PyLint
+- Black
+- Mock
+- AsyncMock
+- Konstanten
+- Enums
+- Events (Observerable-Pattern) -> NEIN!
+- Web-Server
+    - uvicorn
+
+
+DevContainer:
+- poetry config virtualenvs.in-project true
